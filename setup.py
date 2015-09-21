@@ -12,7 +12,7 @@ install_requires = []
 version = '.'.join([ str(confluent.schemaregistry.__version__[i]) for i in range(3) ])
 
 setup(
-    name = 'confluent-schemaregistry',
+    name = 'rpm-confluent-schemaregistry',
     version = version,
     packages = ['confluent',
                 'confluent.schemaregistry',
@@ -28,7 +28,7 @@ setup(
     author = 'Verisign',
     author_email = 'vsrtc-dev@verisign.com',
     description = 'Confluent Schema Registry lib',
-    keywords = 'confluent schema registry schemaregistry',
+    keywords = 'This is a mirror of https://github.com/verisign/python-confluent-schemaregistry until that package is registered on PyPI.',
     extras_require = {
         'fastavro': ['fastavro'],
     },
